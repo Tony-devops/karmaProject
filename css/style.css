@@ -9,7 +9,7 @@
     --white: #fff;
  }
 
- #logo{
+ .logo{
     padding: 10px 15px 5px 15px;
     margin-left: 5vw;
     margin-right: 40vw;
@@ -21,7 +21,7 @@ body {
    
     
 }
-.header{
+.header-one{
     width: max-content;
     height: 6vh;
     background-color: var(--grey-light);
@@ -165,12 +165,12 @@ a:hover{
 hr{
     width: 70%;
 }
-.footer{
+.footer-one{
     display: flex;
     align-content: center;
     justify-content: center;
 }
-#socials{
+.socials{
     padding: 10px;
     
 }
