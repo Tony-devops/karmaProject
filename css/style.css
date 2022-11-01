@@ -58,7 +58,7 @@ a:visited{
     text-decoration: none;
 }
 a:hover{
-    color:  rgb(255, 68, 0);
+    color:var(--orange);
     text-decoration: none ;
 }
 .hero-image{
@@ -92,7 +92,7 @@ a:hover{
 .hero-text button{
     border: none;
     padding:10px 25px;
-    background-color: rgb(255, 68, 0);
+    background-color: var(--orange);
     cursor: pointer;
     border-radius: 5px;
 }
@@ -118,7 +118,7 @@ a:hover{
 }
 
 .bottom-img {
-    background-color: #363434;
+    background-color: var(--grey-dark);
     height: 100%;
     background-image: url(/level-2/homepage-feature.png);
     background-repeat: no-repeat;
