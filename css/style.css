@@ -1,6 +1,15 @@
 
  /* We are using the 'Roboto' font from Google. This has already been added to your HTML header */
-#logo{
+:root {
+    --grey-dark: #363434;
+    --grey: #adadad;
+    --grey-light: #f7f7f7;
+    --orange: #f05a28;
+    --orange-light: #f7bfa3;
+    --white: #fff;
+ }
+
+ #logo{
     padding: 5px 15px;
     margin-left: 5vw;
     margin-right: 40vw;
@@ -99,9 +108,56 @@ a:hover{
     */
 }
 
-.bottomflex{
-    display:flex;
-background-color: #ffe6ea;
+.bottom-grid {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1.5fr 2fr;
+
+
+}
+
+.bottom-img {
+    background-color: #363434;
+    height: 100%;
+    background-image: url(/level-2/homepage-feature.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.bottom-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 8rem;
+    background-color: var(--orange-light);
+    color: var(--grey-dark);
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+
+}
+
+.bottom-text p {
+    font-style: italic;
+}
+
+.bottom-text p span {
+    color: var(--orange);
+}
+
+.bottom-text a {
+    background-color: var(--orange);
+    border: none;
+    padding: .8rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--white);
+    font-size: 12px;
+}
+.bottom-text a:hover {
+    background-color: var(--grey-dark);
 }
 
 
