@@ -98,6 +98,13 @@ a:hover{
     margin-left: 20px;
     */
 }
+
+.bottomflex{
+    display:flex;
+background-color: #ffe6ea;
+}
+
+
 hr{
     width: 70%;
 }
