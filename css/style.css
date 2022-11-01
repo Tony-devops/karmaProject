@@ -10,7 +10,7 @@
  }
 
  #logo{
-    padding: 5px 15px;
+    padding: 10px 15px 5px 15px;
     margin-left: 5vw;
     margin-right: 40vw;
     
@@ -24,6 +24,7 @@ body {
 .header{
     width: max-content;
     height: 6vh;
+    background-color: var(--grey-light);
 }
 h1{
     text-align: center;
