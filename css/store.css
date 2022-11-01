@@ -1,0 +1,59 @@
+:root {
+    --grey-dark: #363434;
+    --grey: #adadad;
+    --grey-light: #f7f7f7;
+    --orange: #f05a28;
+    --orange-light: #f7bfa3;
+    --white: #fff;
+ }
+
+
+.main-store{
+    display: flex;
+    flex-direction: row;
+    
+}
+.karma-form{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    width: 100%;
+    gap: 25px;
+    background-color: aqua;
+    margin: 0;
+}
+.karma-form h1{
+    color:var(--orange);
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.form-fill{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: none;
+    gap: 25px;
+    align-items: stretch;
+}
+.form-items{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 5px;
+
+}
+
+.display-image{
+    background-image: url('/level-2/store-image_by-andrew-neel-unsplash.jpg');
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 2rem;
+
+}
