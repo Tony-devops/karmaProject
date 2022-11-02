@@ -1,3 +1,12 @@
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
 :root {
     --grey-dark: #363434;
     --grey: #adadad;
@@ -6,11 +15,45 @@
     --orange-light: #f7bfa3;
     --white: #fff;
  }
+header{
+    display: flex;
+    align-items: center;
+    padding: 2rem 5rem;
+    border-bottom: var(--grey);
+    background-color: var(--grey-light);
+    justify-content: space-between;
+}
+.logo-two{
+    display: block;
+}
+.nav-box{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+list-style: none;
+position: relative;
+}
+.nav-items{
+    display: flex;
+    padding: 0 2rem;
+}
+.nav-links{
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+    color: var(--grey);
+}
+
+
+
 
 
 .main-store{
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 2fr 1.5fr;
     
 }
 .karma-form{
@@ -49,6 +92,7 @@ form{
 .display-image{
     background-image: url('/level-2/store-image_by-andrew-neel-unsplash.jpg');
     background-position: center;
+
     width: 100%;
     height: 100vh;
     background-repeat: no-repeat;

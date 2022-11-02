@@ -114,7 +114,6 @@ a:hover{
     grid-template-rows: auto;
     grid-template-columns: 1.5fr 2fr;
 
-
 }
 
 .bottom-img {
@@ -125,6 +124,7 @@ a:hover{
     background-size: cover;
 
 }
+
 
 .bottom-text {
     display: flex;
