@@ -63,12 +63,12 @@ position: relative;
 }
 
 .main-store{
-  /*  display: flex;
+display: flex;
 flex-direction: row;
-flex-wrap: wrap; */
+/*flex-wrap:wrap; 
 display: grid;
     grid-template-rows: auto;
-    grid-template-columns: 2fr 1.5fr;    
+    grid-template-columns: 2fr 2fr; */    
 }
 .karma-form{
     display: flex;
@@ -76,7 +76,7 @@ display: grid;
     padding: 2rem;
     width: 50%;
     gap: 25px;
-    background-color: #adadad;
+    
     
 }
 .karma-form h1{
@@ -92,15 +92,29 @@ form{
     flex-direction: row;
     flex-wrap: wrap;
     border: none;
-    gap: 25px;
+    gap: 35%;
     align-items: stretch;
+   
 }
 .form-items{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    gap: 5px;
+    gap: 10px;
 
+}
+
+input[type=text], select {
+    padding: 5px 5px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid var(--grey-dark);
+    
+}
+label{
+    color: var(--grey-dark);
+    font-weight: 400;
+    font-size: 14px;
 }
 
 .display-image{
@@ -111,6 +125,7 @@ form{
     background-size: cover;
     margin: 0;
     background-color: #f05a28;
+    height: 70vh;
     
 }
 
