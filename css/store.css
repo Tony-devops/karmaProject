@@ -62,25 +62,22 @@ position: relative;
     cursor: pointer;
 }
 
-
-
-
-
-
 .main-store{
-    display: grid;
+  /*  display: flex;
+flex-direction: row;
+flex-wrap: wrap; */
+display: grid;
     grid-template-rows: auto;
-    grid-template-columns: 2fr 1.5fr;
-    
+    grid-template-columns: 2fr 1.5fr;    
 }
 .karma-form{
     display: flex;
     flex-direction: column;
     padding: 2rem;
-    width: 100%;
+    width: 50%;
     gap: 25px;
-    background-color: aqua;
-    margin: 0;
+    background-color: #adadad;
+    
 }
 .karma-form h1{
     color:var(--orange);
@@ -109,14 +106,12 @@ form{
 .display-image{
     background-image: url('/level-2/store-image_by-andrew-neel-unsplash.jpg');
     background-position: center;
-
-    width: 100%;
-    height: 100vh;
+    width: 50%;
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
-    padding: 2rem;
-
+    background-color: #f05a28;
+    
 }
 
 /*media for tablet break @768 480*/
