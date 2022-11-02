@@ -65,22 +65,27 @@ position: relative;
 .main-store{
 display: flex;
 flex-direction: row;
-/*flex-wrap:wrap; 
-display: grid;
+flex-wrap:wrap; 
+
+/*display: grid;
     grid-template-rows: auto;
     grid-template-columns: 2fr 2fr; */    
 }
 .karma-form{
     display: flex;
     flex-direction: column;
-    padding: 2rem;
-    width: 50%;
-    gap: 25px;
-    
+    padding:6% 8% ;
+    width: 40%;
+    gap: 20px;
+    border-bottom: 1px solid var(--grey);
     
 }
 .karma-form h1{
     color:var(--orange);
+}
+.conjoined{
+justify-content: space-between;
+;
 }
 form{
     display: flex;
@@ -92,8 +97,9 @@ form{
     flex-direction: row;
     flex-wrap: wrap;
     border: none;
-    gap: 35%;
+    gap: 20px;
     align-items: stretch;
+    
    
 }
 .form-items{
@@ -101,7 +107,8 @@ form{
     flex-direction: column;
     flex-wrap: wrap;
     gap: 10px;
-
+    width: auto;
+    
 }
 
 input[type=text], select {
@@ -116,16 +123,58 @@ label{
     font-weight: 400;
     font-size: 14px;
 }
+#postcode{
+    text-transform: uppercase;
+    width: 120px;
 
+}
+select{
+    font-size: 14px;
+    font-style: italic;
+    width: 250px;
+    height: 40px;
+    color: var(--grey-dark);
+    font-weight: 400;
+    padding: 5px 5px;
+}
+.radio-button{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+.radio-button ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+.check-box a {
+    color: var(--orange);
+}
+button{
+    background-color: var(--orange);
+    border: 1px solid var(--orange);
+    border-radius: 5px;
+    padding: 10px 25px;
+    transition: border-radius 1s height 1s;
+    height: 50px;
+    color: var(--white);
+}
+button:hover{
+    border-radius: 50%;
+    height:100px;
+    background-color: var(--grey);
+
+}
 .display-image{
     background-image: url('/level-2/store-image_by-andrew-neel-unsplash.jpg');
     background-position: center;
-    width: 50%;
+    width: 43%;
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
     background-color: #f05a28;
     height: 70vh;
+    border-bottom: 1px solid var(--grey);
     
 }
 
