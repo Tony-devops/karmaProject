@@ -45,6 +45,23 @@ position: relative;
     text-decoration: none;
     color: var(--grey);
 }
+.nav-links:hover{
+    color: var(--orange);
+
+}
+.menu-top{
+    display: flex;
+}
+#check{
+    display:none;
+}
+/*hamburger menu*/
+.small-menu{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+}
+
 
 
 
@@ -100,4 +117,34 @@ form{
     margin: 0;
     padding: 2rem;
 
+}
+
+/*media for tablet break @768 480*/
+@media screen and (max-width:768px){
+   .menu-top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 40vh;
+    flex-direction: column;
+    top: -600px;
+    border-radius: 5px;
+    z-index: 1;
+    gap: 8px;
+    opacity: .7;
+    position: fixed;
+    background-color: var(--grey-light);
+   } 
+  .small-menu{
+    display: inline-block;
+    z-index: 4;
+  } 
+ #check:checked ~ .small-menu{
+    transform: rotate(-120deg);
+    background-color: var(--orange);
+    opacity: .8;
+  }
+  #check:checked ~ .menu-top{
+    top: 0;
 }
