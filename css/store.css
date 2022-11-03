@@ -79,13 +79,14 @@ flex-wrap:wrap;
     gap: 20px;
     border-bottom: 1px solid var(--grey);
     
+    
 }
 .karma-form h1{
     color:var(--orange);
 }
 .conjoined{
 justify-content: space-between;
-;
+
 }
 form{
     display: flex;
@@ -107,6 +108,7 @@ form{
     flex-direction: column;
     flex-wrap: wrap;
     gap: 10px;
+    flex-basis: 46%;
     width: auto;
     
 }
@@ -126,7 +128,9 @@ label{
 #postcode{
     text-transform: uppercase;
     width: 120px;
-
+}
+.form-postcode{
+    align-content: flex-end;
 }
 select{
     font-size: 14px;
