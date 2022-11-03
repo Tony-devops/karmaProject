@@ -170,7 +170,7 @@ select{
     list-style: none;
     gap: 20px;
 }
-.check-box a {
+.container a {
     color: var(--orange);
 }
 button{
@@ -205,6 +205,53 @@ background-clip: content-box;
 .radio-button input[type="radio"]:checked {
   background-color: var(--orange);
 }
+
+/*check box with orange tick*/
+
+/* The container */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 22px;
+  width: 22px;
+  border: 1px solid var(--grey);
+border-radius: 5px;
+}
+
+/* On mouse-over, add a grey background color */ 
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-image: url('../level-2/checkmark.svg');
+background-repeat: no-repeat;
+  background-position: center;
+  background: size 22px;
+}
+
 
 /*media for tablet break @768 */
 @media screen and (max-width:768px){
