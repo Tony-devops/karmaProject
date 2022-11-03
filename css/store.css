@@ -15,6 +15,8 @@ html,body
     --orange-light: #f7bfa3;
     --white: #fff;
  }
+
+ /*navbar setup*/
 header{
     display: flex;
     align-items: center;
@@ -71,6 +73,8 @@ flex-wrap:wrap;
     grid-template-rows: auto;
     grid-template-columns: 2fr 2fr; */    
 }
+/*main form and image layout*/
+
 .display-image{
     background-image: url('/level-2/store-image_by-andrew-neel-unsplash.jpg');
     background-position: center;
@@ -83,6 +87,9 @@ flex-wrap:wrap;
     border-bottom: 1px solid var(--grey);
     
 }
+
+/* form layout*/
+
 .karma-form{
     display: flex;
     flex-direction: column;
@@ -139,7 +146,7 @@ label{
 }
 #postcode{
     text-transform: uppercase;
-    width: 120px;
+    width: 150px;
 }
 .form-postcode{
     align-content: flex-end;
@@ -183,6 +190,21 @@ button:hover{
 
 }
 
+/* radio box color change*/
+
+.radio-button input[type='radio'] {
+width: 15px;
+height: 15px;
+border: 1px solid var(--grey-dark);
+appearance: none;
+border-radius: 50px;
+padding: 3px;
+background-clip: content-box;
+}
+
+.radio-button input[type="radio"]:checked {
+  background-color: var(--orange);
+}
 
 /*media for tablet break @768 */
 @media screen and (max-width:768px){
