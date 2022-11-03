@@ -71,6 +71,18 @@ flex-wrap:wrap;
     grid-template-rows: auto;
     grid-template-columns: 2fr 2fr; */    
 }
+.display-image{
+    background-image: url('/level-2/store-image_by-andrew-neel-unsplash.jpg');
+    background-position: center;
+    width: 44%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    background-color: #f05a28;
+    height: auto;
+    border-bottom: 1px solid var(--grey);
+    
+}
 .karma-form{
     display: flex;
     flex-direction: column;
@@ -159,30 +171,20 @@ button{
     border: 1px solid var(--orange);
     border-radius: 5px;
     padding: 10px 25px;
-    transition: border-radius 1s height 1s;
+    transition: border-radius 0.5s, height 0.5s;
+    transition-timing-function: ease-in-out;
     height: 50px;
     color: var(--white);
 }
 button:hover{
-    border-radius: 50%;
-    height:100px;
+    border-radius: 20%;
+    height:60px;
     background-color: var(--grey);
 
 }
-.display-image{
-    background-image: url('/level-2/store-image_by-andrew-neel-unsplash.jpg');
-    background-position: center;
-    width: 43%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0;
-    background-color: #f05a28;
-    height: 70vh;
-    border-bottom: 1px solid var(--grey);
-    
-}
 
-/*media for tablet break @768 480*/
+
+/*media for tablet break @768 */
 @media screen and (max-width:768px){
    .menu-top{
     display: flex;
@@ -211,3 +213,21 @@ button:hover{
   #check:checked ~ .menu-top{
     top: 0;
 }
+.main-store {
+display: flex;
+flex-direction: column;
+flex-wrap:wrap; 
+
+/*display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 2fr 2fr; */    
+}
+.display-image{
+    height: 30vh;
+    width: auto;
+}
+.karma-form{
+    width: auto;
+    }
+
+/*media for tablet break @480*/
