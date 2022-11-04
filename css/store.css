@@ -20,7 +20,7 @@ html,body
 header{
     display: flex;
     align-items: center;
-    padding: 2rem 5rem;
+    padding: 1rem 3rem;
     border-bottom: var(--grey);
     background-color: var(--grey-light);
     justify-content: space-between;
