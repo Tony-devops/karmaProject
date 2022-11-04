@@ -300,3 +300,47 @@ flex-wrap:wrap;
     }
 
 /*media for tablet break @480*/
+@media screen and (max-width:480px){
+   .menu-top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 40vh;
+    flex-direction: column;
+    top: -600px;
+    border-radius: 5px;
+    z-index: 1;
+    gap: 8px;
+    opacity: 1;
+    position: fixed;
+    background-color: var(--grey-light);
+   } 
+  .small-menu{
+    display: inline-block;
+    z-index: 4;
+  } 
+ #check:checked ~ .small-menu{
+    transform: rotate(-120deg);
+    background-color: var(--orange);
+    opacity: .8;
+  }
+  #check:checked ~ .menu-top{
+    top: 0;
+}
+.main-store {
+display: flex;
+flex-direction: column;
+flex-wrap:wrap; 
+
+/*display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 2fr 2fr; */    
+}
+.display-image{
+    height: 30vh;
+    width: auto;
+}
+.karma-form{
+    width: auto;
+    }
